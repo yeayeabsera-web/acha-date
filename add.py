@@ -7,38 +7,7 @@ import asyncio
 import logging
 import random
 import sqlite3
-
-from telegram import (
-    Update,
-    InlineKeyboardButton,
-    InlineKeyboardMarkup,
-    ReplyKeyboardMarkup,
-    ReplyKeyboardRemove,
 )
-
-from telegram.ext import (
-    Application,
-    CommandHandler,
-    CallbackQueryHandler,
-    MessageHandler,
-    ConversationHandler,
-    ContextTypes,
-    filters,
-)
-
-# =====================================================
-# CONFIG
-# =====================================================
-
-TOKEN = "8476171509:AAEQRPdV6n4BRYK01D82ivufhOjlPq2ny-4"
-
-ADMINS = [
-    8460165874,
-]
-
-# =====================================================
-# LOGGING
-# =====================================================
 
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
